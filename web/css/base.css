@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Doppio One');
+
+
+body {
+    background-color: rgb(47, 70, 102);
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FFDFAA;
+}
+.menu li {
+    display: inline;
+    margin: 20px;
+    padding-top: 100px;
+}
+.menu {
+    box-shadow: 15px 0px 75px 12px black;
+}
+.menu a {
+    text-transform: uppercase;
+    line-height: 40px;
+    font-family: "Audiowide";
+    color: rgb(47, 70, 102);
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+}
+table {
+    background-color: #FFDFAA;
+    font-family: Doppio One;
+    color: rgb(47, 70, 102);
+    box-shadow: 15px 0px 75px 12px black;
+}
+.container {
+    margin-top: 10%;
+}
+.container h1 {
+    font-family: "Russo One";
+    color: white;
+    text-align: center;
+}
+.container table {
+    width: 90%;
+    margin: 0 auto;
+}
+.col-md-3{
+    height: 200px;
+}
+.images {
+    width: 100%;
+    padding-top: 100px;
+}
+.image1 {
+    background-image: url("img/airplane.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.image2 {
+    background-image: url("img/book.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.image3 {
+    color: white;
+    font-size: 174px;
+}
+.image4 {
+    background-image: url("img/pencil.png");
+    background-size: 179px;
+    background-repeat: no-repeat;
+}
