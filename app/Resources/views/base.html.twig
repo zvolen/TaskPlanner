@@ -19,6 +19,11 @@
 
     </head>
     <body>
+
+    {% if form is defined %}
+        {% form_theme form 'bootstrap_3_layout.html.twig' %}
+    {% endif %}
+
     <div class="menu">
         {{ knp_menu_render('AppBundle:Builder:mainMenu') }}
     </div>
