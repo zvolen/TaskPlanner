@@ -58,12 +58,12 @@ table {
     padding-top: 100px;
 }
 .image1 {
-    background-image: url("img/airplane.png");
+    background-image: url("../img/airplane.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 .image2 {
-    background-image: url("img/book.png");
+    background-image: url("../img/book.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -72,7 +72,7 @@ table {
     font-size: 174px;
 }
 .image4 {
-    background-image: url("img/pencil.png");
+    background-image: url("../img/pencil.png");
     background-size: 179px;
     background-repeat: no-repeat;
 }
