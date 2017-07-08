@@ -4,21 +4,23 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 @import url('https://fonts.googleapis.com/css?family=Doppio One');
 
-
 body {
     background-color: rgb(47, 70, 102);
 }
+
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #FFDFAA;
 }
+
 .menu li {
     display: inline;
     margin: 20px;
     padding-top: 100px;
 }
+
 .menu {
     box-shadow: 15px 0px 75px 12px black;
 }
@@ -32,12 +34,6 @@ body {
     font-weight: bold;
     font-size: 18px;
 }
-table {
-    background-color: #FFDFAA;
-    font-family: Doppio One;
-    color: rgb(47, 70, 102);
-    box-shadow: 15px 0px 75px 12px black;
-}
 .container {
     margin-top: 10%;
 }
@@ -50,7 +46,7 @@ table {
     width: 90%;
     margin: 0 auto;
 }
-.col-md-3{
+.col-md-3 {
     height: 200px;
 }
 .images {
@@ -89,7 +85,11 @@ form.fos_user_registration_register div input {
     color: rgb(47, 70, 102);
     font-family: "Audiowide";
 }
-input#username, input#password {
+input#username,
+input#password,
+input#appbundle_task_name,
+input#appbundle_task_description
+{
     display: block;
     width: 100%;
     height: 34px;
@@ -101,16 +101,17 @@ input#username, input#password {
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     background-color: #FFDFAA;
     color: rgb(47, 70, 102);
     font-family: "Audiowide";
 }
-div.container div form label {
+div.container div form label,
+div #appbundle_task {
     color: #FFDFAA;
     font-family: "Audiowide";
     padding-top: 14px;
@@ -122,4 +123,15 @@ input#_submit {
 }
 a.btn.btn-info.btn-large {
     margin-top: 36px;
+}
+.form-table {
+    background-color: #FFDFAA;
+    font-family: Doppio One;
+    color: rgb(47, 70, 102);
+    padding: 20px;
+    box-shadow: 15px 0px 75px 12px black;
+    border-radius: 44px;
+}
+.line-through {
+    text-decoration: line-through;
 }

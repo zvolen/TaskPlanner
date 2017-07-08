@@ -3,38 +3,42 @@
 {% block body %}
     <h1>List of things to do before you die...</h1>
 
-    <table>
-        <thead>
+    <div class="form-table">
+        <table>
+            <thead>
             <tr>
-                <th>Id</th>
+                <th></th>
                 <th>Name</th>
                 <th>Description</th>
                 <th>Complete</th>
                 <th>Created</th>
                 <th>Actions</th>
             </tr>
-        </thead>
-        <tbody>
-        {% for task in tasks %}
-            <tr>
-                <td><a href="{{ path('task_show', { 'id': task.id }) }}">{{ task.id }}</a></td>
-                <td>{{ task.name }}</td>
-                <td>{{ task.description }}</td>
-                <td>{% if task.complete %}Yes{% else %}No{% endif %}</td>
-                <td>{% if task.created %}{{ task.created|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>
+            </thead>
+            <tbody>
+            {% for task in tasks %}
+                <tr {% if task.complete %} class="line-through" {% endif %}>
+                    <td>
+                        <a href="{{ path('task_show', { 'id': task.id }) }}">{% if task.complete %} X {% else %} O {% endif %}</a>
+                    </td>
+                    <td>{{ task.name }}</td>
+                    <td>{{ task.description }}</td>
+                    <td>{% if task.complete %}Yes{% else %}No{% endif %}</td>
+                    <td>{% if task.created %}{{ task.created|date('Y-m-d H:i:s') }}{% endif %}</td>
+                    <td>
 
-                    <a href="{{ path('task_show', { 'id': task.id }) }}" class="btn btn-default btn-xs">show</a>
+                        <a href="{{ path('task_show', { 'id': task.id }) }}" class="btn btn-default btn-xs">show</a>
 
-                    <a href="{{ path('task_edit', { 'id': task.id }) }}" class="btn btn-info btn-xs">edit</a>
+                        <a href="{{ path('task_edit', { 'id': task.id }) }}" class="btn btn-info btn-xs">edit</a>
 
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
 
     <div class="text-center">
-            <a href="{{ path('task_new') }}" class="btn btn-info btn-large">Create a new task</a>
+        <a href="{{ path('task_new') }}" class="btn btn-info btn-large">Create a new task</a>
     </div>
 {% endblock %}

@@ -60,7 +60,7 @@ class Task
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -83,7 +83,7 @@ class Task
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -106,7 +106,7 @@ class Task
     /**
      * Get description
      *
-     * @return string 
+     * @return string
      */
     public function getDescription()
     {
@@ -129,7 +129,7 @@ class Task
     /**
      * Get complete
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getComplete()
     {
@@ -145,7 +145,7 @@ class Task
      */
     public function setCreated()
     {
-        if(!isset($this->created))
+        if (!isset($this->created))
             $this->created = new \DateTime();
 
         return $this;
@@ -154,7 +154,7 @@ class Task
     /**
      * Get created
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getCreated()
     {
@@ -177,7 +177,7 @@ class Task
     /**
      * Get user
      *
-     * @return \AppBundle\Entity\User 
+     * @return \AppBundle\Entity\User
      */
     public function getUser()
     {

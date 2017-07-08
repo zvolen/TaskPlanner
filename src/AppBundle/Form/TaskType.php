@@ -15,7 +15,7 @@ class TaskType extends AbstractType
     {
         $builder->add('name', 'text', array(
             'label' => 'Task name'
-            ))
+        ))
             ->add('description', 'text', array(
                 'label' => 'Description',
                 'required' => true, //client side only
@@ -26,7 +26,7 @@ class TaskType extends AbstractType
             ))
             ->add('complete');
     }
-    
+
     /**
      * {@inheritdoc}
      */
